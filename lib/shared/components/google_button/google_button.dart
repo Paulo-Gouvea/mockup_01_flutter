@@ -23,7 +23,7 @@ class GoogleButton extends StatelessWidget {
               margin: const EdgeInsets.only(right: 10),
             ),
             const Text(
-              'Sign Up with Email ID',
+              'Sign Up with Google',
               style: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.w500
