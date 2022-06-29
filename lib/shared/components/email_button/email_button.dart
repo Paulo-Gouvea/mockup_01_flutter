@@ -1,27 +1,28 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class EmailButton extends StatelessWidget {
   const EmailButton({Key? key}) : super(key: key);
- @override
+
+  @override
   Widget build(BuildContext context) {
-    return Container(     
-      width: MediaQuery.of(context).size.width - 30,
-      height: 70,
-      margin: const EdgeInsets.only(bottom: 20),
+    return Container(
+      width: MediaQuery.of(context).size.width - 40,
+      height: 50,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(8),
-        color: Colors.deepPurple,
+        color: Colors.deepPurple[500],
+        borderRadius: BorderRadius.circular(8), 
       ),
-      child: const Align(
-        alignment: Alignment.center,
+      child: const Center(
         child: Text(
           'Sign Up with Email ID',
           style: TextStyle(
             color: Colors.white,
-            fontSize: 18
+            fontWeight: FontWeight.w500
           ),
         )
-      )
+      ),
     );
   }
 }

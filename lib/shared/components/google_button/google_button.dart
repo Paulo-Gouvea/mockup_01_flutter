@@ -6,34 +6,32 @@ class GoogleButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width - 30,
-      height: 70,
+      width: MediaQuery.of(context).size.width - 40,
+      height: 50,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(8),
         color: Colors.white,
+        borderRadius: BorderRadius.circular(8), 
       ),
-      child: Align(
-        alignment: Alignment.center,
+      child: Center(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              height: 28,
-              width: 28,
+              width: 20,
+              height: 20,
               color: Colors.red,
               margin: const EdgeInsets.only(right: 10),
             ),
             const Text(
-              'Sign Up with Google',
+              'Sign Up with Email ID',
               style: TextStyle(
                 color: Colors.black,
-                fontSize: 18
+                fontWeight: FontWeight.w500
               ),
-            ),
+            )
           ],
-        ),
+        )
       ),
     );
   }
 }
- 

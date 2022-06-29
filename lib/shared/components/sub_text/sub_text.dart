@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class SubText extends StatelessWidget  {
+class SubText extends StatelessWidget {
   const SubText({Key? key}) : super(key: key);
 
   @override
@@ -9,8 +9,9 @@ class SubText extends StatelessWidget  {
       'Manage your expenses.\nSeamlessly.',
       textAlign: TextAlign.center,
       style: TextStyle(
+        fontSize: 19,
+        fontWeight: FontWeight.w400,
         color: Colors.grey,
-        fontSize: 20,
       ),
     );
   }
