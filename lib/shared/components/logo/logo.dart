@@ -3,12 +3,14 @@ import 'package:flutter/material.dart';
 class Logo extends StatelessWidget  {
   const Logo({Key? key}) : super(key: key);
 
+  final logoImg = 'lib/shared/assets/logo.png';
+
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 90,
-      width: 90,
-      color: Colors.deepPurple[800],
+    return Image(
+      image: AssetImage(logoImg),
+      height: 120,
+      width: 120
     ); 
   }
 }

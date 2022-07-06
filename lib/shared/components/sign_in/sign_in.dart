@@ -14,16 +14,16 @@ class SignIn extends StatelessWidget {
             color: Colors.white
           ),
         ),
-        Container(
-          margin: const EdgeInsets.only(left: 5),
+        TextButton(
           child: const Text(
-          'Sign In',
-          style: TextStyle(
-            color: Colors.white,
-            decoration: TextDecoration.underline
-          ),
+            'Sign In',
+            style: TextStyle(
+              color: Colors.white,
+              decoration: TextDecoration.underline
+            ),
+          ), 
+          onPressed: () {},
         ),
-        )
       ],
     );
   }

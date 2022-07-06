@@ -11,41 +11,46 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final mediaQuery = MediaQuery.of(context);
+    final screen = mediaQuery.size;
+    final width = screen.width;
+    final height = screen.height;
+
     return Scaffold(
       body: Container(
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
-        padding: const EdgeInsets.only(top: 150),
+        width: width,
+        height: height,
+        padding: EdgeInsets.only(top: height * 0.2),
         color: Colors.black,
         child: Column(
           children: [
             const Logo(),
             Container(
-              margin: const EdgeInsets.only(top: 40),
+              margin: EdgeInsets.only(top: height * 0.05),
               child: Column(
                 children: [
                   const MainText(),
                   Container(
-                    margin: const EdgeInsets.only(top: 20),
+                    margin: EdgeInsets.only(top: height * 0.02),
                     child: const SubText(),
                   )
                 ],
               ),
             ),
             Container(
-              margin: const EdgeInsets.only(top: 70),
+              margin: EdgeInsets.only(top: height * 0.08),
               child: Column(
                 children: [
                   const EmailButton(),
                   Container(
-                    margin: const EdgeInsets.only(top: 15),
+                    margin: EdgeInsets.only(top: height * 0.02),
                     child: const GoogleButton(),
                   )
                 ],
               ),
             ),
             Container(
-              margin: const EdgeInsets.only(top: 40),
+              margin: EdgeInsets.only(top: height * 0.05),
               child: const SignIn()
             ),
           ],
