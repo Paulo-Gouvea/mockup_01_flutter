@@ -19,7 +19,7 @@ class EmailButton extends StatelessWidget {
       onPressed: (() {}), 
       child: const Center(
         child: Text(
-          'Sign Up  with Email ID',
+          'Sign Up with Email ID',
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.w500
