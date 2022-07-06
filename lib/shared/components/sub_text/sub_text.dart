@@ -11,7 +11,7 @@ class SubText extends StatelessWidget {
       style: TextStyle(
         fontSize: 19,
         fontWeight: FontWeight.w400,
-        color: Colors.grey,
+        color: Color(0xFF7C7C7E),
       ),
     );
   }

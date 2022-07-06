@@ -7,7 +7,7 @@ class EmailButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        primary: Colors.deepPurple[500],
+        primary: const Color(0xFF5E5CE5),
         fixedSize: Size(
           MediaQuery.of(context).size.width - 40, 
           50
