@@ -10,9 +10,13 @@ class GoogleButton extends StatelessWidget {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         primary: Colors.white,
+        maximumSize: const Size(
+          300, 
+          45
+        ),
         fixedSize: Size(
-          MediaQuery.of(context).size.width - 40, 
-          50
+          MediaQuery.of(context).size.width - 50, 
+          45
         ),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8)
